@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>HTML Box</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parentDiv {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .wrapper {
+        width: 100%;
+        max-width: 1080px;
+      }
+
+      .gcs,
+      .high_scope,
+      .montessori,
+      .reggio_milia,
+      .waldorf {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 30px;
+      }
+
+      .gcs::after,
+      .high_scope::after,
+      .montessori::after,
+      .reggio_milia::after,
+      .waldorf::after {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        content: "";
+        display: block;
+        border: 2px solid white;
+        height: inherit;
+        width: inherit;
+      }
+
+      .item {
+        flex: 1;
+        padding: 40px;
+        text-align: center;
+      }
+
+      .title {
+        font-size: 22px;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        color: white;
+      }
+
+      .text {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Roboto", sans-serif;
+        color: white;
+      }
+
+      /* GCS */
+
+      .gcs > .classroom,
+      .gcs > .unique_feature {
+        background-color: #ff9900;
+      }
+
+      .gcs > .daily_routine {
+        background-color: #ff7a00;
+      }
+
+      /* High Scope */
+
+      .high_scope > .classroom,
+      .high_scope > .unique_feature {
+        background-color: #fd7676;
+      }
+
+      .high_scope > .daily_routine {
+        background-color: #f27421;
+      }
+
+      /* High Scope */
+
+      .high_scope > .classroom,
+      .high_scope > .unique_feature {
+        background-color: #fd7676;
+      }
+
+      .high_scope > .daily_routine {
+        background-color: #f27421;
+      }
+
+      /* Montessori */
+
+      .montessori > .classroom,
+      .montessori > .unique_feature {
+        background-color: #00b7ac;
+      }
+
+      .montessori > .daily_routine {
+        background-color: #6e7cfa;
+      }
+
+      /* Reggio Milia */
+
+      .reggio_milia > .classroom,
+      .reggio_milia > .unique_feature {
+        background-color: #fd7676;
+      }
+
+      .reggio_milia > .daily_routine {
+        background-color: #f27421;
+      }
+
+      /* Waldorf */
+
+      .waldorf > .classroom,
+      .waldorf > .unique_feature {
+        background-color: #00b7ac;
+      }
+
+      .waldorf > .daily_routine {
+        background-color: #6e7cfa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <div class="wrapper">
+        <!-- GCS -->
+
+        <div class="gcs">
+          <div class="item classroom">
+            <h3 class="title">Classroom</h3>
+            <p class="text">
+              Multilingual immersion program, hands on problem based projects,
+              natural materials, sustainable development skills.
+            </p>
+          </div>
+
+          <div class="item daily_routine">
+            <h3 class="title">Daily Routine.</h3>
+            <p class="text">
+              Meeting, story time, music intelligence, integrated movement,
+              outside play, STEAM program, monthly project, eating, resting.
+            </p>
+          </div>
+
+          <div class="item unique_feature">
+            <h3 class="title">Unique features.</h3>
+            <p class="text">
+              Early global education, multicultural competences, global
+              citizenship perspective.
+            </p>
+          </div>
+        </div>
+
+        <!-- High Scope -->
+
+        <div class="high_scope">
+          <div class="item classroom">
+            <h3 class="title">Classroom</h3>
+            <p class="text">
+              Pretend area, block area, manipulatives, sensory area, cozy area.
+            </p>
+          </div>
+
+          <div class="item daily_routine">
+            <h3 class="title">Daily Routine.</h3>
+            <p class="text">
+              Plan-do-review, small/large group time, outdoor, eating, resting,
+              recall, assessment by observation.
+            </p>
+          </div>
+
+          <div class="item unique_feature">
+            <h3 class="title">Unique features.</h3>
+            <p class="text">
+              Plan with teacher. Work through plan. Explain what they did.
+            </p>
+          </div>
+        </div>
+
+        <!-- Montessori -->
+
+        <div class="montessori">
+          <div class="item classroom">
+            <h3 class="title">Classroom</h3>
+            <p class="text">
+              Practical life, sensorial, language, mathematics, geography, &
+              cultural studies, natural materials.
+            </p>
+          </div>
+
+          <div class="item daily_routine">
+            <h3 class="title">Daily Routine.</h3>
+            <p class="text">
+              Circle time, outdoors time, self-directed work, 2 hour blocks,
+              quiet time and open ended-activities, eating, resting.
+            </p>
+          </div>
+
+          <div class="item unique_feature">
+            <h3 class="title">Unique features.</h3>
+            <p class="text">
+              Mixed aged classroom, self correcting learning materials with
+              built in controls, student choice of activity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Reggio Emilia -->
+
+        <div class="reggio_milia">
+          <div class="item classroom">
+            <h3 class="title">Classroom</h3>
+            <p class="text">
+              Homelike environment with emphasis on natural materials.
+            </p>
+          </div>
+
+          <div class="item daily_routine">
+            <h3 class="title">Daily Routine.</h3>
+            <p class="text">
+              Outdoor play and nature walk, creative play, eating, resting.
+            </p>
+          </div>
+
+          <div class="item unique_feature">
+            <h3 class="title">Unique features.</h3>
+            <p class="text">Sanguine, melancholic, choleric, phlegmatic.</p>
+          </div>
+        </div>
+
+        <!-- Waldorf -->
+
+        <div class="waldorf">
+          <div class="item classroom">
+            <h3 class="title">Classroom</h3>
+            <p class="text">
+              Indoor plants, natural light, kitchens, mirrors, photographs and
+              artwork, natural materials, atelier (workspace).
+            </p>
+          </div>
+
+          <div class="item daily_routine">
+            <h3 class="title">Daily Routine.</h3>
+            <p class="text">
+              Group meeting, work time, investigation time, project time,
+              outside, eating, resting.
+            </p>
+          </div>
+
+          <div class="item unique_feature">
+            <h3 class="title">Unique features.</h3>
+            <p class="text">Long term project based learning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
